@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lyyz7.xposedcatchv2.ImeiAlterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btn_CheckIMEI"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="245dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="38dp"
+        android:text="查询IMEI"
+        app:layout_constraintBottom_toTopOf="@+id/btn_IMEIAlter"
+        app:layout_constraintEnd_toStartOf="@+id/text_imei1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_imei1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="38dp"
+        android:text="IMEI"
+        app:layout_constraintBottom_toTopOf="@+id/text_imei2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_CheckIMEI"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_imei2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="IMSI"
+        app:layout_constraintBottom_toTopOf="@+id/text_mac"
+        app:layout_constraintEnd_toEndOf="@+id/text_imei1"
+        app:layout_constraintStart_toStartOf="@+id/text_imei1"
+        app:layout_constraintTop_toBottomOf="@+id/text_imei1" />
+
+    <Button
+        android:id="@+id/btn_IMEIAlter"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginLeft="1dp"
+        android:text="修改"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_IMEI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_CheckIMEI" />
+
+    <EditText
+        android:id="@+id/edit_IMEI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:ems="10"
+        android:hint="新IMEI"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_IMEIAlter"
+        app:layout_constraintTop_toBottomOf="@+id/text_mac" />
+
+    <TextView
+        android:id="@+id/text_mac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="86dp"
+        android:text="MAC"
+        app:layout_constraintBottom_toTopOf="@+id/edit_IMEI"
+        app:layout_constraintEnd_toEndOf="@+id/text_imei2"
+        app:layout_constraintStart_toStartOf="@+id/text_imei2"
+        app:layout_constraintTop_toBottomOf="@+id/text_imei2" />
+
+</android.support.constraint.ConstraintLayout>

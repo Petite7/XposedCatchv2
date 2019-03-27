@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lyyz7.xposedcatchv2.XposedCheckActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btn_CheckXposed"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginLeft="3dp"
+        android:text="检测Xposed框架"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/text_XposedRes"
+        app:layout_constraintEnd_toStartOf="@+id/text_XposedRes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_XposedRes" />
+
+    <TextView
+        android:id="@+id/text_XposedRes"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="未检测"
+        android:textColor="#4950d4"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_id1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_CheckXposed"
+        app:layout_constraintTop_toBottomOf="@+id/text_root" />
+
+    <TextView
+        android:id="@+id/text_XposedFrame"
+        android:layout_width="0dp"
+        android:layout_height="341dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:text="被Xposed劫持的模块"
+        android:textAllCaps="false"
+        android:textColor="#4950d4"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id1" />
+
+    <TextView
+        android:id="@+id/text_id1"
+        android:layout_width="78dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="检测结果："
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_XposedFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_XposedRes" />
+
+    <TextView
+        android:id="@+id/text_root"
+        android:layout_width="179dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:text="Root状态： 未Root"
+        android:textColor="#4950d4"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_XposedRes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
